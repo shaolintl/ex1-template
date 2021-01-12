@@ -37,3 +37,4 @@ For more info - https://en.wikipedia.org/wiki/Linear-feedback_shift_register
 * Back on the terminal, you should then execute `git push`, which will prompt you for your username and password on github.
 * The next time you open Che, it will start from the last pushed version.
 * You can use Github in order to browse the different versions, or by typing `git log`.
+ 
