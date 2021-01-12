@@ -35,5 +35,6 @@ For more info - https://en.wikipedia.org/wiki/Linear-feedback_shift_register
 * The way to persist your changes is by using Git.
 * Every several minutes, you should commit the changes you have done using the `source control: git` button on the left. You should add all the files you want to add to the commit, add an instructive commit message in the specific place and then click `ctrl + enter`.
 * Back on the terminal, you should then execute `git push`, which will prompt you for your username and password on github.
+* If you want to avoid having to enter username and password each time in a specific session, you can keep this information on your Che instance by typing `git config --global credential.helper store`. Note though that you do not want to persist the stored information to github, since it contains your password. The stored information will be therefore deleted at the end of the session and you will need to type the above line again in your next session. There are better ways of handling the password which depends on encryption algorithms. If you are interested, I can help you set them up.
 * The next time you open Che, it will start from the last pushed version.
 * You can use Github in order to browse the different versions, or by typing `git log`.
