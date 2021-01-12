@@ -8,6 +8,10 @@ import java.util.Arrays;
 
 public final class Exercise1 {
 
+    public static void main(String[] args) {
+        System.out.println("\n===============Hello=============");
+    }
+
     /**
     * Utility classes should not have a public or default constructor.
     */
