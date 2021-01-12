@@ -1,0 +1,33 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'aup.cs.Exercise1'
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+}
+
+test {
+  useJUnitPlatform()
+
+  testLogging {
+    events 'PASSED', 'FAILED', 'SKIPPED'
+    exceptionFormat = 'full'
+    showStandardStreams = true
+  }
+}
+
+task pack(type: Zip) {
+   from '.'
+   into 'ex'
+   include 'build.gradle'
+   include 'config/**/'
+   include 'src/**'
+   archiveName 'ex.zip'
+   destinationDir(file('.'))
+}
