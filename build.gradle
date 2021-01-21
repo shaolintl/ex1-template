@@ -5,7 +5,7 @@ repositories {
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'aup.cs.Exercise1'
+mainClassName = 'aup.cs.Test'
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
