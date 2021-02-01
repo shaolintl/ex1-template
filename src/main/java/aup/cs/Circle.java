@@ -1,27 +1,19 @@
 package aup.cs;
 
-public class Circle {
-    double radius;
+class Circle {
+    private double axe;
 
     public static void main(String[] args) {
-        Circle c1 = new Circle(4.5);
+        Circle c1 = new Circle();
         Circle c2 = new Circle();
-        c2.radius = 31;
-        System.out.println("Circle 1 has an area of " + c1.computeArea());
-        System.out.println("Circle 2 has an area of " + c2.computeArea());
-
-        Circle.radius;
+        System.out.println(c1.getRadius());
     }
 
-    Circle(double rad) {
-        radius = rad;
+    public double getRadius() {
+        return axe;
     }
 
-    Circle() {
-        radius = 1.0;
+    public void setRadius(double r) {
+        axe = r;
     }
-    double computeArea() {
-        return Math.PI * Math.pow(radius,2);
-    }
-
 }
